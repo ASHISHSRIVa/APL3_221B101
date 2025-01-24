@@ -6,7 +6,7 @@ Welcome to GDB Online.
   Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
-// Defining the Mother class
+
 class Mother {
     int x;
     
@@ -19,7 +19,6 @@ class Mother {
     }
 }
 
-// Defining the Child class that inherits from Mother
 class Child extends Mother {
     
     Child(int x) {
@@ -32,14 +31,14 @@ class Child extends Mother {
     }
 }
 
-// Application class to test polymorphism
+
 public class Application {
     public static void main(String args[]) {
         Mother m = new Mother(10);
-        m.show(); // show of Mother is called, should display "Hello World"
+        m.show(); 
         
         Child ch = new Child(20);
-        ch.show(); // show() overridden in Child from Mother is called, should display "Hello JUET"
+        ch.show(); 
         
         Mother m1 = new Child(30);
         m1.show(); // show() of Child is called due to polymorphism, should display "Hello JUET"
